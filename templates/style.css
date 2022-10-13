@@ -1,0 +1,141 @@
+body{
+  background-color: gray;
+}
+.navbar-nav {
+  margin: 12px 40px;
+  padding: 0px;
+}
+
+.nav-item {
+  background-color: gray;
+  margin: -9px;
+  padding: 12px 39px;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+background-color: green;
+}
+
+  .alert_seccess {
+      color: #3c763d;
+      background-color: #dff0d8;
+      border-color: #d6e9c6;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+
+  }
+  .alert_error {
+        color: #da0908e8;
+        background-color: #f0d8d8;
+        border-color: #cde9c6;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+
+  }
+  .closebtn {
+      font-weight: bold;
+      font-size: larger;
+      cursor: pointer;
+  }
+  .h1_user {
+      text-align: center;
+  }
+  .main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: space-around;
+  }
+
+  .main_form {
+      width: 1025px;
+      background-color: #2F2D2D;
+      color: antiquewhite;
+      font-family: system-ui;
+  }
+  img {
+      height: 150px;
+      width: 160px;
+  }
+  .homeimg {
+      width: 1023px;
+      height: 618px;
+  }
+
+
+  label {
+      padding: 2px 8px 5px 0px;
+      margin: 14px 19px 17px;
+  }
+
+  input {
+      padding: 6px 5px;
+      margin: 7px 9px 12px;
+      width: 282px;
+  }
+
+  input.btn.btn-success {
+      width: -webkit-fill-available;
+      background-color: #28dc49;
+      font-size: larger;
+      font: initial;
+      border: none;
+  }
+  h1.upload_header {
+      text-align-last: center;
+      color: white;
+  }
+  form.form-inline {text-align: center;}
+  .fform {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: stretch;
+      align-items: center;
+  }
+  form.form-inline {
+      text-align: center;
+      background-color: #0000004d;
+      padding: 57px;
+      margin: 0px 0px 29px 3px;
+  }
+  input.info {
+      width: 15px;
+  }
+  button.link_btn {
+      width: 235px;
+      height: 31px;
+  }
+  img.video_frame {
+      width: -webkit-fill-available;
+      height: auto;
+  }
+  table {
+  border-collapse: collapse;
+  width: 100%;
+  }
+
+  th, td {
+  text-align: left;
+  padding: 8px;
+  }
+
+  tr:nth-child(even){background-color: #f2f2f2}
+
+  th {
+  background-color: #04AA6D;
+  color: white;
+  }

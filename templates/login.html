@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        background-color: #1f1f1f;
+      }
+
+        .alert_seccess {
+            color: #3c763d;
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+        .alert_error {
+              color: #da0908e8;
+              background-color: #f0d8d8;
+              border-color: #cde9c6;
+              padding: 15px;
+              margin-bottom: 20px;
+              border: 1px solid transparent;
+              border-radius: 8px;
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: row;
+              justify-content: space-between;
+
+        }
+        .closebtn {
+            font-weight: bold;
+            font-size: larger;
+            cursor: pointer;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: space-around;
+        }
+
+        .main_form {
+          width: 876px;
+          background-color: #2F2D2D;
+          color: antiquewhite;
+          font-family: system-ui;
+          height: 515px;
+
+        }
+
+        label {
+            padding: 2px 8px 5px 0px;
+            margin: 14px 19px 17px;
+            color: white;
+        }
+
+        input {
+            padding: 6px 5px;
+            margin: 7px 9px 12px;
+            width: 282px;
+        }
+
+        input.btn.btn-success {
+            width: -webkit-fill-available;
+            background-color: #28dc49;
+            font-size: larger;
+            font: initial;
+            border: none;
+        }
+        .form {
+            display: flex;
+            justify-content: center;
+        }
+
+        form.Login {
+            padding: 34px 63px 79px;
+            background: #0000004d;
+            margin: 96px 17px 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color :white ;
+        }
+        button.buton {
+            padding: 6px 186px;
+            margin: 10px 29px 1px 21px;
+            font-size: larger;
+            background-color: #28dc49;
+            border: none;
+        }
+    </style>
+  </head>
+  <body>
+
+
+    <div class="main">
+      <div class="main_form">
+        <div class="alert">
+          <div class="form">
+            <form class="Login" method="post">
+              <h1>Login</h1>
+              <label for="username">Username</label>
+              <input type="text" name="user" id="user" value="" placeholder="username"><br>
+              <label for="passwd">password</label>
+              <input type="password" name="passwd" id="passwd" value="" placeholder="password"><br>
+              <button class="buton" type="submit" name="submit" value="login" >login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

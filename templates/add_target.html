@@ -1,0 +1,35 @@
+{% extends "home.html" %}
+{%block content%}
+<div>
+ <!-- File upload form -->
+ <h1 class="upload_header"> upload target <i class="fa fa-address-book"></i> </h1>
+
+<div class="fform">
+
+  <form method="post" action="/target_upload" enctype="multipart/form-data" class="add_target_form form-inline">
+    <label for="">username</label>
+    <input class="username"type="text" name="username" value="" placeholder="username"> <br>
+    <label for="">email</label>
+    <input class="email" type="text" name="email" value="" placeholder="Email"> <br>
+    <label for="">age</label>
+    <input class="age" type="text" name="age" value="" placeholder="Age"> <br>
+    <label for="">phone</label>
+    <input class="phone" type="text" name="phone" value="" placeholder="0770*******"> <br>
+    <label for="">Wanted</label>
+    <input class="radio" type="radio" name="info" value="Wanted">
+    <label for="">Normal</label>
+    <input class="radio" type="radio" name="info" value="Normal"> <br>
+
+
+    <div class="form-group">
+      <label>Choose Images <i class="fa fa-folder-open" aria-hidden="true"></i>
+:  </label>
+      <input type="file" name="files" id="fileInput" class="form-control"  >
+    </div>
+    <input type="submit" name="submit" class="btn btn-success" value="UPLOAD"/>
+  </form>
+</div>
+</div>
+
+
+{% endblock %}

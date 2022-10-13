@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+    <meta charset="utf-8">
+    <title>home</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style media="screen">
+    body{
+      background-color: #1f1f1f;
+    }
+    .navbar-nav {
+      margin: 12px 40px;
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-item {
+      background-color: base;
+      margin: -9px;
+      padding: 12px 39px;
+      color: white;
+      text-decoration: none;
+    }
+    a:hover{
+    background-color: green;
+    }
+
+      .alert_seccess {
+          color: #3c763d;
+          background-color: #dff0d8;
+          border-color: #d6e9c6;
+          padding: 15px;
+          margin-bottom: 20px;
+          border: 1px solid transparent;
+          border-radius: 8px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-between;
+
+      }
+      .alert_error {
+            color: #da0908e8;
+            background-color: #f0d8d8;
+            border-color: #cde9c6;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+
+      }
+      .closebtn {
+          font-weight: bold;
+          font-size: larger;
+          cursor: pointer;
+      }
+      .h1_user {
+          text-align: center;
+      }
+      .main {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-content: space-around;
+      }
+
+      .main_form {
+          width: 1025px;
+          background-color: #2F2D2D;
+          color: antiquewhite;
+          font-family: system-ui;
+          padding: 2px 1px 24px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      img {
+          height: 150px;
+          width: 160px;
+      }
+      .homeimg {
+          width: 1023px;
+          height: 618px;
+      }
+
+
+      label {
+          padding: 2px 8px 5px 0px;
+          margin: 14px 19px 17px;
+      }
+
+      input {
+          padding: 6px 5px;
+          margin: 7px 9px 12px;
+          width: 282px;
+      }
+
+      input.btn.btn-success {
+          width: -webkit-fill-available;
+          background-color: #28dc49;
+          font-size: larger;
+          font: initial;
+          border: none;
+          cursor: pointer;
+      }
+      button.add_author_btn {
+          width: 464px;
+          height: 35px;
+          margin: 15px 1px 1px;
+          background-color: #28dc49;
+          cursor: pointer;
+          font-size: larger;
+          border: none;
+      }
+      h1.upload_header {
+          text-align-last: center;
+          color: white;
+      }
+      form.form-inline {text-align: center;}
+      .fform {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-content: stretch;
+          align-items: center;
+      }
+      form.form-inline {
+        text-align: center;
+        background-color: #0000004d;
+        padding: 38px 48px 44px;
+        margin: 0px 0px 29px 3px;
+    }
+    form.add_target_form {
+        padding: 40px 37px 31px;
+    }
+    input#fileInput {
+        cursor: pointer;
+      }
+      input.info {
+          width: 15px;
+      }
+      button.link_btn {
+          width: 235px;
+          height: 31px;
+          background-color: #9e9e9e;
+          border:None;
+      }
+      a.rest:hover{
+        background-color: #0000004d
+
+      }
+      .rest_btn{
+        width: 235px;
+        height: 31px;
+        background-color: #9e9e9e;
+        border:None;
+      }
+      .rest_btn:hover{
+        background-color: red;
+        color: white;
+        cursor: pointer;
+      }
+      img.video_frame {
+          width: -webkit-fill-available;
+          height: auto;
+      }
+      table {
+      border-collapse: collapse;
+      width: 100%;
+      }
+
+      th, td {
+      text-align: left;
+      padding: 8px;
+      }
+      th {
+      color: white;
+      }
+      .form {
+          display: flex;
+          justify-content: center;
+      }
+      form.signup {
+        text-align: center;
+        background-color: #0000004d;
+        padding: 32px 43px 44px;;
+        margin: 0px 0px 29px 3px;
+      }
+      form.Login {
+          padding: 34px 63px 79px;
+          background: #000;
+          margin: 25px 17px 50px;
+      }
+
+      h1,h3 {
+          text-align: center;
+          color: white;
+      }
+      a#logout:hover {
+        background-color: red;
+      }
+      input#email {
+          margin: 11px 11px 12px 39px;
+      }
+
+      input#passwd2 {
+          margin: 3px 4px 7px 17px;
+          padding: 6px;
+      }
+      input.username {
+          margin: 8px 11px 11px -21px;
+      }
+
+      input.age {
+          margin: 9px 2px 12px 18px;
+      }
+      input.usr {margin: 11px 15px 11px -16px;}
+
+      input.id {
+          margin: 10px 21px 9px 41px;
+      }
+      input.radio {
+          margin: -120px;
+      }
+      table.user-table {
+          background-color: #0000004d;
+      }
+      .Search {
+          background-color: #0000004d;
+          padding: 0px 113px;
+      }
+      input.delete {
+          background-color: #da2a2afc;
+          border: none;
+          font-size: medium;
+          color: aliceblue;
+          cursor: pointer;
+      }
+      input.delete:hover {
+          background-color: red;
+      }
+      input.start {
+          background-color: #2e972e;
+          border: none;
+          font-size: initial;
+          font-weight: bold;
+          cursor: pointer;
+          color: black;
+      }
+
+      input.start:hover {background-color: green;}
+
+      input.stop {
+          background-color: brown;
+          border: none;
+          font-size: initial;
+          font-weight: bold;
+          cursor: pointer;
+      }
+
+      input.stop:hover {
+          background-color: red;
+      }
+
+      input.start:hover {
+          background-color: #11ff11;
+      }
+      input.search_input {
+          width: 62px;
+          margin: 2px;
+      }
+      input.srch {
+          margin: 2px;
+          width: 229px;
+          height: 31px;
+          background-color: #9e9e9e;
+          border: None;
+          cursor: pointer;
+      }
+      input.srch:hover {
+          background-color: #11ff11;
+      }
+      button.link_btn:hover {
+          background-color: red;
+      }
+      .adminlist{
+        width: 235px;
+        height: 31px;
+        background-color: #9e9e9e;
+        border :None;
+      }
+      .adminlist:hover{
+        background-color: orange;
+      }
+      object {
+          background-color: aliceblue;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <nav calss="navbar-main">
+      <div class="nav-contener" id="navbar">
+        <div class="navbar-nav">
+            <a class="nav-item" id="home" href="/"><i class="fa fa-home" aria-hidden="true"></i> home</a>
+            <a class="nav-item" id="Add" href="/add_target"><i class="fa fa-address-card-o" aria-hidden="true"></i> Add_tarqet</a>
+            <a class="nav-item" id="Users" href="/target_info"><i class="fa fa-user-secret" aria-hidden="true"></i> target_info</a>
+            <a class="nav-item" id="camera" href="/target_modify"><i class="fa fa-cogs" aria-hidden="true"></i> target_modify</a>
+            <a class="nav-item" id="video" href="/qr_code"><i class="fa fa-qrcode" aria-hidden="true"></i> QR Code</a>
+            <a class="nav-item" id="video" href="/camera"><i class="fa fa-camera" aria-hidden="true"></i> camera</a>
+            <a class="nav-item" id="sign-up" href="/add_author"><i class="fa fa-user-plus" aria-hidden="true"></i> author</a>
+            <a class="lout nav-item" id="logout" href="/login"><i class="fa fa-sign-out" aria-hidden="true"></i> logout</a>
+
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <div class="main">
+      <div class="main_form">
+        <div class="alert">
+          <p>
+              {% with messages = get_flashed_messages(with_categories=true) %}
+                  {% if messages %}
+                    {%for category , message in messages%}
+                      {% if category == "error"%}
+                          <div class="alert_error">
+                            <strong>{{ message }}</strong>
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                          </div>
+                      {% else %}
+                          <div class="alert_seccess">
+                            <strong>{{ message }}</strong>
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                          </div>
+                      {%endif%}
+                    {% endfor %}
+                  {% endif %}
+              {% endwith %}
+         </p>
+          <!--<strong>File successfully uploaded</strong>-->
+
+          <!--<img class="video_frame" src="{{ url_for('video_feed') }}" width="100%">-->
+        </div>
+
+        {%block content%}<img class="homeimg "src="https://www.gdt.com/wp-content/uploads/2018/12/facial-recognition-software-image.jpg" alt="">{%endblock%}
+
+      </div>
+    </div>
+  </body>
+</html>

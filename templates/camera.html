@@ -1,0 +1,14 @@
+{% extends 'home.html'%}
+{% block content %}
+    <title>Video Streaming  </title>
+    <h1>Video Streaming <i class="fa fa-video-camera" aria-hidden="true"></i> </h1>
+    <form class="" action="/camera" method="post">
+      <input class="start" type="submit" name="submit" value="start">
+      <input class="stop" type="submit" name="submit" value="stop">
+      {% if founction == "start" %}
+      <img class="video_frame" src="{{ url_for('video_feed') }}" width="100%">
+      {% else %}
+      <!--<img class="video_frame" src="{{ url_for('video_feed') }}" width="100%">-->
+      {% endif %}
+    </form>
+{% endblock %}

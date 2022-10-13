@@ -1,0 +1,39 @@
+{% extends "home.html"%}
+{%block title%}Sign up{%endblock%}
+{%block content%}
+<h1>Author <i class="fa fa-user-o" aria-hidden="true"></i></h1>
+<div class="form">
+  <form class="signup" method="post">
+    <h1>Add author</h1>
+    <label for="username">Username</label>
+    <input type="text" name="username" id="user" value="" placeholder="username"><br>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" value=""placeholder="Email"><br>
+
+    <label for="passwd1">password</label>
+    <input type="password" name="password" id="passwd1" value=""placeholder="password"><br>
+
+    <label for="confpassword">confirm</label>
+    <input type="password" name="password2" id="passwd2" value=""placeholder="Confirm password"><br>
+
+    <button class="add_author_btn" type="submit" name="submit">Submit</button>
+
+  </form>
+
+
+
+
+
+  <form class="form-inline" action="delete_author" method="post">
+    <h1>Delete Author <i class="fa fa-ban" aria-hidden="true"></i>
+  </h1>
+    <label for="">Delete Admin</label>
+    <input class="delete_id" type="text" name="row_id" value="" placeholder="ID username phone Info">
+    <input class="delete" type="submit" name="delete" value="delete">
+  </form>
+
+</div>
+
+
+{%endblock%}

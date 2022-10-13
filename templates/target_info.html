@@ -1,0 +1,71 @@
+{% extends 'home.html'%}
+{%block content%}
+<div class="Search">
+  <h1>Target info <i class="fa fa-id-card-o" aria-hidden="true"></i></h1>
+  <hr>
+  <form class="form_Search" action="/search" method="post">
+    <input class="search_input" type="text" name="search" value="" placeholder="Search">
+    <input class="srch"type="submit" name="search" value="Search">
+    <a class="rest" href="/target_info"> <button class="rest_btn" type="button" name="button">Reset</button> </a>
+    <a class="adminli" href="/admin_list"> <button class="adminlist" type="button" name="button">Admin LIst</button> </a>
+  </form>
+</div>
+<div class="users-div">
+  {% if admin != "True" %}
+  <table class="user-table">
+    <tr class="main_tr">
+      <td>id</td>
+      <td>username</td>
+      <td>code</td>
+      <td>email</td>
+      <td>phone</td>
+      <td>age</td>
+      <td>info</td>
+      <td>image_name</td>
+      <td>image</td>
+      <td>QR Code</td>
+    </tr>
+    {% for user in users %}
+    <tr>
+      <td>{{user[0]}}</td>
+      <td>{{user[1]}}</td>
+      <td>{{user[8]}}</td>
+      <td>{{user[2]}}</td>
+      <td>{{user[3]}}</td>
+      <td>{{user[4]}}</td>
+      <td>{{user[5]}}</td>
+      <td>{{user[6]}}</td>
+      {% if user[7] %}
+      <td>
+        <img src="static/uploads/{{user[6]}}" alt="">
+      </td>
+      {%else%}
+      <td>0</td>
+      {%endif%}
+
+      <td> <object data="static/barcode/svg/{{user[10]}}" type="image/svg+xml"></object> </td>
+    </tr>
+    {% endfor %}
+  </table>
+    {%else%}
+    <table class="user-table">
+      <tr class="main_tr">
+        <td>id</td>
+        <td>username</td>
+        <td>email</td>
+        <td>password</td>
+      </tr>
+      {% for user in users %}
+      <tr>
+        <td>{{user[0]}}</td>
+        <td>{{user[1]}}</td>
+        <td>{{user[2]}}</td>
+        <td>{{user[3]}}</td>
+        <td>
+      </tr>
+      {% endfor %}
+      {%endif%}
+
+</div>
+
+{%endblock%}

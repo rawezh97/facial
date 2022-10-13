@@ -1,0 +1,39 @@
+{% extends 'home.html'%}
+{%block content%}
+
+<h1>Update The User content <i class="fa fa-pencil-square-o" aria-hidden="true"></i></h1>
+<h3>you can update just one fild the rest will be the same as before</h3>
+<div class="fform">
+<form method="post" action="/update" enctype="multipart/form-data" class="add_target_form form-inline">
+  <label class="label_id"for="">id</label>
+  <input class="id" type="text" name="id" value="" placeholder="id"><br>
+  <label for="">username</label>
+  <input class="usr" type="text" name="username" value="" placeholder="username"><br>
+  <label for="">email</label>
+  <input class="email" type="text" name="email" value="" placeholder="Email"><br>
+  <label for="">age</label>
+  <input class="age" type="text" name="age" value="" placeholder="age"><br>
+  <label for="">phone</label>
+  <input type="text" name="phone" value="" placeholder="07********"><br>
+  <label for="">Wanted</label>
+  <input class="radio" type="radio" name="info" value="Wanted">
+  <label for="">Normal</label>
+  <input class="radio" type="radio" name="info" value="Normal">
+  <div class="form-group">
+    <label>Choose Images: </label>
+    <input type="file" name="files" id="fileInput" class="form-control"  >
+  </div>
+  <input type="submit" name="submit" class="btn btn-success" value="UPDATE"/>
+</form>
+
+<form class="form-inline" action="delete_row" method="post">
+  <h1>Delete From Database <i class="fa fa-ban" aria-hidden="true"></i>
+</h1>
+  <label for="">Delete user</label>
+  <input class="delete_id" type="text" name="row_id" value="" placeholder="ID username phone Info">
+  <input class="delete" type="submit" name="delete" value="delete">
+  <hr>
+</form>
+
+</div>
+{%endblock%}

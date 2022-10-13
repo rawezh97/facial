@@ -1,0 +1,14 @@
+{% extends 'home.html'%}
+{% block content %}
+    <title>QR Scanner  </title>
+    <h1>QR Code Scanner <i class="fa fa-qrcode" aria-hidden="true"></i> </h1>
+    <form class="" action="/qr_code" method="post">
+      <input class="start" type="submit" name="submit" value="start">
+      <input class="stop" type="submit" name="submit" value="stop">
+      {% if founction == "start" %}
+      <img class="video_frame" src="{{ url_for('qr_codeer') }}" width="100%">
+      {% else %}
+      <!--<img class="video_frame" src="{{ url_for('qr_codeer') }}" width="100%">-->
+      {% endif %}
+    </form>
+{% endblock %}
